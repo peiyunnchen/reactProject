@@ -1,7 +1,14 @@
 import React, { useState } from 'react';
 
-function AppFunction(props) {
-  return <></>;
+function MyButtonTwo(props) {
+  const innerValue = '這是two中的資料';
+
+  return (
+    <>
+      {/* <button onClick={props.clickMethod}>{props.title}</button> */}
+      <button onClick={() => props.setText(innerValue)}>{props.title}</button>
+    </>
+  );
 }
 
-export default AppFunction;
+export default MyButtonTwo;
