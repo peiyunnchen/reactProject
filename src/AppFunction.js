@@ -1,7 +1,7 @@
 // 導入react or其他模組(元件) from react(東西在node_module裡)
 // 使用{}導入的模組，為部分導入
-import React, { useState } from 'react'
-import './App.css'
+import React, { useState } from 'react';
+import './App.css';
 // use開頭的function都是hooks
 
 // function component函式型元件
@@ -10,7 +10,7 @@ import './App.css'
 function AppFunction(props) {
   // [getter(只能access),setter(是改變getter的function)]
   // 呼叫useState function，設定初始化值為0,回傳一組陣列含getter與setter
-  const [total, setTotal] = useState(props.initValue)
+  const [total, setTotal] = useState(props.initValue);
   // 從母元件的props物件中取initValue
 
   return (
@@ -25,8 +25,8 @@ function AppFunction(props) {
       <button onClick={() => setTotal(total + 1)}>+1</button>
       <button onClick={() => setTotal(total - 1)}>-1</button>
     </>
-  )
+  );
 }
 
 // 輸出函式(元件)=call function
-export default AppFunction
+export default AppFunction;
