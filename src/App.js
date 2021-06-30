@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import MoneyInput from './component/MoneyInput';
 import Datepicker from './component/Datepicker';
+import TodoApp from './component/TodoApp';
 
 function App(props) {
   const [twd, setTwd] = useState(0);
@@ -53,6 +54,7 @@ function App(props) {
         }}
       />
       <Datepicker />
+      <TodoApp />
     </>
   );
 }
